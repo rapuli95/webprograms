@@ -18,12 +18,15 @@
 
 		}
 	</script>
-	<ul id = "my-list"> Check this	</ul>
+	
+	<ul id = "my-list"> Check this</ul>
+	<textarea id = "written"> </textarea>
 	<button id = "add-data" onclick = "add()">Add data</button>
 	<script>
 		function add() {
 			var list = document.getElementById("my-list");
-			var item = document.createElement('li').textContent = "Ooops";
+			var item = document.createElement('li');
+			item.textContent.getElementById("written").value;
 			list.appendChild(item);
 		}
 	</script>
