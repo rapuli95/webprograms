@@ -8,7 +8,29 @@
 
 <body>
 	<div id="app"></div>
+	<h1 id = hey> Hello World </h1>
+	<button id = "my-button" onclick = "hello()"> Click me</button>
+	
+	<script>
+		function hello (){
+			console.log("Hello World!");
+			document.getElementById("hey").textContent = "My Notebook";
 
+		}
+	</script>
+	
+	<ul id = "my-list"> Check this</ul>
+	<textarea id = "written"> </textarea>
+	<button id = "add-data" onclick = "add()">Add data</button>
+	<script>
+		function add() {
+			var list = document.getElementById("my-list");
+			var item = document.createElement('li');
+			item.textContent.getElementById("written").value;
+			list.appendChild(item);
+		}
+	</script>
+	
 	<script src="src/index.js">
 	</script>
 </body>
