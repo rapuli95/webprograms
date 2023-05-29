@@ -14,14 +14,14 @@
 	<script>function hello() {
   console.log("Hello World!");
   document.getElementById("hey").textContent = "My Notebook";
-}
-function add() {
-  var item = document.createElement("li").textContent("Ooops");
 }</script>
-	<ul> Check this
-		<button id="add-data" onclick="add()">Add data</button>
-		<li>Wow</li>
-	</ul>
+	<ul id="my-list"> Check this	</ul>
+	<button id="add-data" onclick="add()">Add data</button>
+	<script>function add() {
+  var list = document.getElementById("my-list");
+  var item = document.createElement('li').textContent = "Ooops";
+  list.appendChild(item);
+}</script>
 	
 	<script src="/src.a2b27638.js">
 	</script>
